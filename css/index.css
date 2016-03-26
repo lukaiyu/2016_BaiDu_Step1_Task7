@@ -1,0 +1,640 @@
+/* reset */
+html, body, h1, h2, h3, h4, h5, h6, div, ul, li, p, form, label, input, button, img, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+
+button {
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+body, textarea, input, button {
+  font: 12px/1.14 'Microsoft YaHei';
+  outline: 0;
+  color: #000;
+}
+
+/* index */
+html, body {
+  width: 100%;
+  min-width: 1280px;
+}
+
+.header {
+  width: 100%;
+  height: 55px;
+  background-color: #fff;
+}
+.header #logo {
+  float: left;
+  height: 30px;
+  margin: 15px 0 0 60px;
+  font: 1.75em 'SimHei';
+  line-height: 30px;
+  color: #393a3a;
+}
+.header #logo img {
+  float: left;
+  margin-right: 10px;
+}
+.header .header-login {
+  float: right;
+  width: 32px;
+  height: 20px;
+  padding-left: 19px;
+  margin: 19px 67px 0 12px;
+  background: url(../img/login.png) no-repeat 0 center; /*0是图像的起始位置*/
+  color: #e74f4d;
+  font-size: 1.2em;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.nav {
+  float: right;
+}
+.nav li {
+  float: left;
+  height: 55px;
+  padding: 0 18px;
+  line-height: 55px;
+  cursor: pointer;
+}
+.nav li a {
+  font-size: 1.1em;
+  color: #787b83;
+}
+.nav li:hover a {               /*鼠标放在上面后转换颜色*/
+  color: #e74f4d;
+}
+.nav li.active {
+  border-bottom: 5px #e74f4d solid;
+}
+.nav li.active a {
+  color: #e74f4d;
+}
+
+.section_2 {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  overflow: hidden;              /*所在框中发生溢出时候的情况，hidden 会被修剪，然后不显示*/
+}
+.section_2 img {
+  width: 100%;
+}
+
+.section_2_warp {
+  position: absolute;
+  left: 9.140625%;
+  top: 33.333333%;
+  color: #fff;
+}
+.section_2_warp h1 {
+  font-size: 5em;
+  margin-bottom: 20px;
+}
+.section_2_warp p {
+  font-size: 1.75em;
+  line-height: 30px;
+  padding-left: 5px;
+}
+.section_2_warp .section_2_btn {
+  display: block;
+  width: 330px;
+  height: 65px;
+  margin: 60px 0 0 8px;
+  background-color: #e74f4d;
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 64px;
+  color: #fff;
+}
+.section_2_warp .section_2_btn:hover {
+  background-color: #e9615f;
+}
+
+.section_3 {
+  height: 200px;
+  padding-top: 45px;
+  width: 100%;
+  overflow: hidden;
+}
+.section_3 ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.section_3 ul li img {
+  height: 40px;
+}
+.section_3 ul li p {
+  width: 50%;
+  height: 52px;
+  padding: 0 25%;
+  margin-top: 46px;
+  font: 1.2em 'SimHei';
+  color: #767777;
+  border-right: 2px solid #aaaaaa;
+}
+
+.section_4 {
+  width: 100%;
+  height: 360px;
+  background-color: #ededec;
+  text-align: center;
+}
+.section_4 img {
+  margin: 90px 0 50px;
+}
+.section_4 p {
+  color: #323333;
+  font: 4.5em 'SimHei';
+  opacity: 0.5;                             /*规定元素不透明的级别 0（完全透明）到1（完全不透明）*/
+  /*filter: alpha(opacity=50);*/
+}
+
+.section_5 {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section-5-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.section_5 h1 {
+  font-size: 1.75em;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.section_5 .line {
+  margin: 10px 0 20px;
+}
+
+.line {
+  display: inline-block;
+  height: 3px;
+  width: 30px;
+  background-color: #fff;
+}
+
+.section_5 p {
+  color: #fff;
+}
+
+.select_imitation {
+  display: inline-block;
+  width: 1200px;
+  margin-top: 50px;
+  padding-left: 160px;
+}
+
+.select {
+  float: left;
+  position: relative;
+  width: 185px;
+  height: 35px;
+  padding: 0 35px 0 12px;
+  text-align: left;
+  background-color: #fff;
+  margin-right: 29px;
+  color: #a8aaaa;
+  border-width: 0 1px;
+  border-color: #e2cec9;
+  border-style: solid;
+  overflow: hidden;
+}
+.select .arrow {
+  position: absolute;
+  top: 9px;
+  right: 8px;
+  cursor: pointer;
+}
+.select .valuebox {
+  height: 100%;
+  line-height: 35px;
+  overflow: hidden;
+  white-space: nowrap;              /*处理元素内的空白，nowrap表示在同一行进行，*/
+  text-overflow: ellipsis;         /*用省略号来代替超出的文本*/
+}
+.select.active {
+  border: 1px solid #c27971;
+  overflow: visible;
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  width: 100%;
+  height: 104px;
+  border: 1px solid #c27971;
+  overflow-x: hidden;
+  cursor: pointer;
+}
+
+.options .option {
+  height: 26px;
+  width: 203px;
+  padding-left: 31px;
+  line-height: 26px;
+  background-color: #e3e2e4;
+  color: #323333;
+}
+
+.options .option:hover {
+  background: url(../img/tick.png) no-repeat 8px center;
+  background-color: #be4e48;
+  color: #fff;
+}
+
+#search {
+  float: left;
+  width: 210px;
+  height: 35px;
+  padding-left: 25px;
+  background-color: #be4e48;
+  letter-spacing: 25px;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.section_6 {
+  height: 530px;
+  padding-top: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: #f8f7f7;
+}
+.section_6 ul {
+  display: inline-block;
+  width: 1000px;
+}
+.section_6 ul li {
+  position: relative;
+  width: 217px;
+  height: 323px;
+  padding-top: 13px;
+  margin-left: 36px;
+  border: 1px solid #dcdcdc;
+  background-color: #fff;
+  float: left;
+}
+.section_6 ul li:first-child {
+  margin-left: 0;
+}
+.section_6 ul li.reverse {
+  top: 53px;
+}
+.section_6 ul li.reverse .info {
+  top: -50px;                             /*定位在相对元素上方的50个像元处*/
+}
+.section_6 ul li.reverse .info h1 {
+  font-size: 1.7em;
+  letter-spacing: 35px;
+  margin-right: -36px;
+}
+
+.info {
+  position: absolute;
+  bottom: -45px;
+  width: 100%;
+  text-align: center;
+}
+.info h1 {
+  font-size: 1.17em;
+}
+.info p {
+  margin-top: 5px;
+  color: #bcbdbd;
+}
+
+.section_7 {
+  width: 100%;
+  overflow: hidden;
+}
+.section_7 img {
+  float: left;
+  width: 66.666667%;
+}
+
+.section_7_right {
+  float: left;
+  width: 33.333333%;
+  text-align: center;
+}
+.section_7_right h1 {
+  margin: 165px 0 30px;
+  font-size: 1.666667em;
+}
+.section_7_right h1 img {
+  float: none;
+  width: 20px;
+  vertical-align: -3px;                /*垂直对其的方式*/
+}
+.section_7_right h1 span {
+  color: #e74f4d;
+}
+.section_7_right p {
+  width: 286px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'SimSun';
+  color: #aaaaaa;
+  line-height: 30px;
+}
+.section_7_right a {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  width: 100px;
+  margin: 50px 0 25px;
+  border: 1px solid #e74f4d;
+  color: #e74f4d;
+}
+.section_7_right a:hover {
+  background-color: #e74f4d;
+  color: #fff;
+}
+
+#points {
+  width: 61px;
+  height: 12px;
+  margin: 0 auto;
+}
+#points li {
+  float: left;
+  width: 11px;
+  height: 12px;
+  margin-left: 14px;
+  background: url(../img/point.png) no-repeat;
+  cursor: pointer;
+}
+#points li:first-child {
+  margin-left: 0;
+}
+#points li.active {
+  background: url(../img/point_active.png) no-repeat;
+}
+
+.section_8 {
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+}
+.section_8 img {
+  float: left;
+  width: 33.333334%;
+}
+
+.section_8_l {
+  float: left;
+  height: 350px;
+  padding-top: 170px;
+  width: 33.333333%;
+  color: #323333;
+  text-align: center;
+}
+.section_8_l .line {
+  margin: 0 auto;
+  background-color: #ababab;
+  margin: 25px 0;
+}
+.section_8_l.red {
+  background-color: #e74f4d;
+  color: #fff;
+}
+.section_8_l.red .line {
+  background-color: #fff;
+}
+.section_8_l.red a {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.section_8_l.red a:hover {
+  color: #e74f4d;
+  background-color: #fff;
+}
+.section_8_l p {
+  font: 1.75em 'SimHei';
+}
+.section_8_l a {
+  display: block;
+  width: 168px;
+  height: 41px;
+  margin: 0 auto;
+  border: 1px solid #e74f4d;
+  color: #e74f4d;
+  font: 1.75em 'SimHei';
+  line-height: 41px;
+}
+.section_8_l a:hover {
+  color: #fff;
+  background-color: #e74f4d;
+}
+
+.section_9 {
+  height: 750px;
+  width: 1000px;
+  margin: 0 auto;             /*auto 浏览器计算外框边距*/
+  text-align: center;
+}
+.section_9 h1 {
+  margin: 119px 0 26px;
+  font: 1.75em 'SimHei';
+  color: #323333;
+}
+.section_9 p {
+  width: 420px;
+  margin: 0 auto;
+  line-height: 18px;
+  color: #aaaaaa;
+}
+
+.section_9_l {
+  float: left;
+  width: 290px;
+  text-align: left;
+  margin-top: 110px;
+}
+.section_9_l li {
+  width: 100%;
+  margin-top: 40px;
+  overflow: hidden;
+}
+.section_9_l li h3 {
+  font: 1.166667em 'SimHei';
+  color: #231815;
+}
+.section_9_l li p {
+  width: 100%;
+  margin: 26px 0 12px;
+}
+.section_9_l li a {
+  display: block;
+  float: right;
+  width: 24px;
+  height: 20px;
+  padding-left: 18px;
+  background: url(../img/unfold.png) no-repeat 0 9px;
+  line-height: 20px;
+  font-family: 'SimSun';
+  outline: 0;
+}
+.section_9_l li:first-child {
+  margin-top: 0;
+}
+
+.section_9_form {
+  width: 640px;
+  float: left;
+  margin-left: 70px;
+  margin-top: 110px;
+}
+.section_9_form p {
+  display: block;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  width: 310px;
+  margin: 0 0 20px 20px;
+  text-align: left;
+  background-color: #ededee;
+}
+.section_9_form p label {
+  display: block;
+  float: left;
+  height: 100%;
+  width: 75px;
+  padding-left: 15px;
+  color: #231815;
+  font-family: 'SimSun';
+}
+.section_9_form p input {
+  display: block;
+  float: left;
+  height: 100%;
+  width: 220px;
+  line-height: 40px;
+  background-color: transparent;
+}
+.section_9_form p.nomargin {
+  margin-left: 0;
+}
+.section_9_form textarea {
+  width: 620px;
+  height: 140px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #ededee;
+  font-family: 'SimSun';
+  color: #231815;
+}
+.section_9_form #submit {
+  width: 100%;
+  height: 40px;
+  font: 1.166667em 'SimHei';
+  line-height: 40px;
+  background-color: #ededee;
+}
+
+.section_10 {
+  height: 325px;
+  padding-top: 90px;
+  width: 100%;
+  background-color: #32353e;
+  text-align: center;
+}
+.section_10 h1 {
+  color: #fff;
+  font: 1.75em 'SimHei';
+}
+.section_10 p {
+  width: 470px;
+  margin: 13px auto 30px;
+  color: #fff;
+  font-family: 'SimSun';
+}
+.section_10 form {
+  display: inline-block;
+  width: 510px;
+  height: 40px;
+}
+.section_10 form input {
+  float: left;
+  width: 420px;
+  line-height: 40px;
+  padding-left: 10px;
+  height: 100%;
+  color: #231815;
+}
+.section_10 form button {
+  float: left;
+  width: 71px;
+  padding-left: 9px;
+  height: 100%;
+  font-size: 1.25em;
+  color: #fff;
+  background-color: #6f7178;
+  letter-spacing: 10px;                     /*增加或减少字符之间的空白*/
+}
+.section_10 form button:hover {
+  background-color: #797b83;
+}
+
+#share {
+  margin-top: 36px;
+}
+#share a {
+  margin-left: 27px;
+  outline: 0;
+}
+#share a:first-child {
+  margin-left: 0;
+}
+
+.footer {
+  height: 60px;
+  width: 100%;
+  background-color: #303039;
+}
+.footer p {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  font-family: 'SimSun';
+  margin-left: 100px;
+}
+.footer p#toTop {
+  float: right;
+  margin: 0 40px 0 0;
+  cursor: pointer;
+}
